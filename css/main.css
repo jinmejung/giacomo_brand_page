@@ -1,0 +1,386 @@
+                /* reset */
+        body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,tr,th,td,form,fieldset,legend,input,label,textarea,select,button {margin:0; padding:0;}
+        body,h1,h2,h3,h4,h5,h6 {font-size:12px;}
+        a {text-decoration:none; color:#333;}
+        img,fieldset {border:none;}
+        ul,ol,li {list-style:none;}
+        strong,em,address {font-style:normal; font-weight:normal;}
+        table {border-collapse:collapse;} 
+        
+        .clearFix::after {
+            content:'';
+            display:block;
+            clear:both;
+        }
+        .fl {
+            float:left;
+        }
+        .fr {
+            float:right;
+        }
+        #giacomoHotpick{
+            width:100%;
+            height:100%;
+            font-family:'Playfair Display','Noto Sans KR','nanumgothic', sans-serif;
+            background-color:#000;
+        }
+        /* main visual */
+        .main_visual{
+            background:url(../img/giacomo_main_visual.jpg) no-repeat center center;
+            background-size:cover;
+            height:680px;
+            position: relative;
+        }
+        .main_visual .main_logo{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        .main_visual .main_logo img{
+            width:100%;
+        }
+        /* section */
+        .sec_sub{
+            position: relative;
+            width:100%;
+            margin:0 auto;
+        }
+        .sec_sub.section01{
+            background:url(../img/giacomo_section01.jpg) no-repeat bottom center;
+            background-size:cover;
+            height:600px;
+        }
+        .sec_sub.section02{
+            background:url(../img/giacomo_section02.jpg) no-repeat top center;
+            background-size:cover;
+            height:600px;
+        }
+        .sec_sub.section03{
+            background:url(../img/giacomo_section03.jpg) no-repeat center center;
+            background-size:cover;
+            height:600px;
+        }
+        .sec_sub .contents_box{
+            width:80%;
+            max-width:1400px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            height:100%;
+        }
+        .sec_sub .contents_box > div{
+            float:left;
+            color:#fff;
+            position: relative;
+            height:100%;
+            overflow: hidden;
+        }
+        .sec_sub .contents_box .tit_box{
+            width:40%;
+            text-align: center;
+        }
+        .sec_sub .contents_box .txt_box{
+            width:60%;
+        }
+        .sec_sub .contents_box > div > div{
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        .sec_sub .contents_box .tit_box h3{
+            font-family:'Playfair Display', serif; 
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+        .sec_sub .contents_box .tit_box h3:after{
+            content:'';
+            display: block;
+            width:430px;
+            height:1px;
+            background-color:#999;
+            margin: 20px 0;
+        }
+        .sec_sub .contents_box .tit_box p{
+            font-family: 'Noto Sans KR',sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 180%;
+            letter-spacing: -0.5px;
+            margin-top: 10px;
+        }
+        .sec_sub .contents_box .txt_box div{
+            width:80%;
+        }
+        .sec_sub .contents_box .txt_box div p{
+            font-family: 'Noto Sans KR',sans-serif;
+            font-size:16px;
+            font-weight:300;
+            line-height:180%;
+            letter-spacing: -0.5px;
+        }
+        .sec_sub .contents_box .txt_box div p:before{
+            content:'';
+            display: block;
+            background:url(../img/giacomo_line.png) no-repeat;
+            width:93px;
+            height:20px;
+            margin-bottom:10px;
+        }
+        
+        
+        .sec_banner{
+            width:100%;
+            height:160px;
+            background-color:#fff;
+        }
+        .sec_banner .banner_list{
+            width:100%;
+            overflow: hidden;
+            height:100%;
+        }
+        .sec_banner .banner_list li {
+            width:50%;
+            float:left;
+            height:100%;
+            position:relative;
+        }
+        .sec_banner .banner_list li:first-child{
+            background-color:#cccccc;
+        }
+        .sec_banner .banner_list li .txt_box{
+            width:70%;
+        }
+        .sec_banner .banner_list li .txt_box{
+            position: absolute;
+            top:50%;
+            transform:translateY(-50%)
+        }
+        .sec_banner .banner_list li:first-child .txt_box{
+            right:30px;
+        }
+        .sec_banner .banner_list li:last-child .txt_box{
+            left:30px;
+        }
+        .sec_banner .banner_list li .txt_box h3{
+            font-family:'Playfair Display', serif; 
+            font-size:30px;
+            font-weight:600;
+            line-height: 50px;
+        }
+        .sec_banner .banner_list li .txt_box p{
+            font-family: 'Noto Sans KR',sans-serif;
+            font-size:14px;
+            letter-spacing: -0.5px;
+            font-weight:300;
+            line-height: 180%;
+        }
+        
+        
+        .section02 .contents_box .product_list{
+            width:100%;
+            overflow: hidden;
+            margin-top:50px;
+            display: inline-block;
+        }
+        .section02 .contents_box .product_list li{
+            float:left;
+            width:33.333%;
+            text-align: center;
+        }
+        .section02 .contents_box .product_list li a{
+            display: inline-block;
+        }
+        .section02 .contents_box .product_list li a img{
+            width:100%;
+        }
+        
+        
+        .section04, .section05{
+            padding:50px 0;
+        }
+        .sec_sub .sec_tit{
+            font-family:'Playfair Display', serif; 
+            font-size: 3.5rem;
+            font-weight: 600;
+            color:#fff;
+            text-align: center;
+            margin-top:30px;
+        }
+        .giacomo_product{
+            width:100%;
+            position: relative;
+            margin:30px 0 50px 0;
+            overflow: hidden;
+        }
+        .swiper-container {
+          width: 100%;
+          height: 100%;
+        }
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #000;
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+        .swiper-slide a{
+            display: block;
+            width:95%;
+            text-align: center;
+        }
+        .swiper-slide a img{
+            width:100%;
+        }
+        .swiper-slide a p{
+            font-size:20px;
+            color:#fff;
+            font-weight:300;
+            margin-top:10px;
+        }
+        
+        
+        .sec_tit_box{
+            color:#fff;
+            text-align: center;
+            position: relative;
+        }
+        .sec_tit_box h3:after{
+            content:'';
+            display: block;
+            width:430px;
+            height:1px;
+            background-color:#999;
+            margin: 20px auto;
+        }
+        .sec_tit_box p{
+            font-family: 'Noto Sans KR',sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 180%;
+            letter-spacing: -0.5px;
+        }
+        .case1_cont {
+            padding-top:70px;
+            width:80%;
+            max-width:1400px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .case1_cont .equip_whiteBox {
+            position:relative;
+        }
+        .case1_cont .equip_whiteBox dl.bg_white {
+            width: 48%;
+            min-height: 274px;
+            position:relative;
+        }
+        /*.case1_cont .equip_whiteBox dl.bg_white:after{
+            content: '';
+            width: 100%;
+            height: 263px;
+            z-index: -1;
+            background-color: #000;
+            border: 1px solid #fff;
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }*/
+        .case1_cont .equip_whiteBox dl.bg_white:nth-child(1){
+            background-image: url('../img/sec1_c2_bg1.png');
+            background-position: left top;
+            background-repeat: no-repeat;
+        }
+        .case1_cont .equip_whiteBox dl.bg_white:nth-child(2) {
+            background-image: url('../img/sec1_c2_bg2.png');
+            background-position: left top;
+            background-repeat: no-repeat;	
+        }
+        .case1_cont .equip_whiteBox dl.bg_white dt,
+        .case1_cont .equip_whiteBox dl.bg_white dd {
+            padding-left:320px;
+            padding-right:40px;
+            color:#222;
+            letter-spacing:0.03em;
+        }
+        .case1_cont .equip_whiteBox dl.bg_white dt {
+            padding-top:20px;
+            color:#000;
+        }
+        .case1_cont .equip_whiteBox dl.bg_white dt p {
+            font-size:20px;
+            font-weight:400;
+            font-family:'Noto Sans KR','Malgun Gothic',sans-serif;
+            line-height:150%;
+        }
+        .case1_cont .equip_whiteBox dl.bg_white dt p:nth-child(2) {
+            font-size:16px;	
+            font-family:'Noto Sans KR','Malgun Gothic',sans-serif;
+            font-weight:600;
+        }
+        .case1_cont .equip_whiteBox dl.bg_white dd {
+            font-size:0.88rem;	
+            font-family:'Noto Sans KR','Malgun Gothic',sans-serif;
+            line-height:150%;
+            margin-top:20px;
+        }
+        .case1_cont .equip_trans {
+            margin-top:40px;
+            
+        }
+        .case1_cont .equip_trans .equip_img {
+            float:left;
+            width: 14%;
+        }
+        .case1_cont .equip_trans .equip_img img {
+            width:154px;
+        }
+        .case1_cont .equip_trans dl.equip_lineBox {
+            float:right;
+            width: 85%;
+        }
+        .case1_cont .equip_trans dl.equip_lineBox dt {
+            border-top:1px solid #fff;
+            border-bottom:1px solid #fff;
+            padding: 20px 0;
+            color:#fff;
+        }
+        .case1_cont .equip_trans dl.equip_lineBox dt p {
+            font-size:20px;
+            font-weight:400;
+            font-family:'Noto Sans KR',sans-serif;
+            line-height:150%;
+        }
+        .case1_cont .equip_trans dl.equip_lineBox dt p:nth-child(2) {
+            font-size:16px;	
+        }
+        .case1_cont .equip_trans dl.equip_lineBox dd {
+            font-size:14px;
+            font-family:'Noto Sans KR',sans-serif;
+            line-height:150%;
+            color:#fff;
+            padding:20px 0;
+            letter-spacing:0.03em;
+        }
+        .case1_cont .equip_transType2 .type2_l {
+            width:48%;
+        }
+        .case1_cont .equip_transType2 .equip_img {
+            width: 27%;
+        }
+        .case1_cont .equip_transType2 dl.equip_lineBox {
+            width: 68%;
+        }
